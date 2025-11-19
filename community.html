@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcade Hub - Community</title>
+
+    <style>
+        body {
+            font-family: 'Sofia', sans-serif;
+            background-color: #222; 
+            color: #fff; 
+            margin: 0;
+            padding-top: 60px; 
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header-content {
+            position: fixed;
+            top: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            max-width: auto;
+            margin: 0 0;
+            background-color: black;
+            padding: 0 20px; 
+            box-sizing: border-box; 
+            z-index: 1000;
+        }
+
+        .nav-links-container {
+            display: flex;
+            justify-content: center;
+            flex-grow: 1;
+        }
+
+        .header-content a {
+            text-decoration: none;
+            color: white;
+            padding: 5px;
+            margin: 0 15px; 
+            display: flex;
+            align-items: center;
+            font-weight: 500; 
+            transition: color 0.3s, transform 0.3s, font-size 0.3s;
+        }
+
+        .header-content a:hover {
+            color: orange;
+            transform: scale(1.1);
+            font-size: large; 
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        .profile-btn{
+            background-color: gray;
+            color: #f0f0f0;
+            padding: 5px 15px; 
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+            flex-grow: 1;
+        }
+
+        .container h1 {
+            margin-top: 0; 
+        }
+
+        h1 {
+            color: #00d166;
+            border-bottom: 2px solid #282828;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+        }
+
+        .forum-post {
+            background-color: #282828;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-left: 5px solid #00d166;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s;
+        }
+
+        .forum-post:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+        }
+
+        .post-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .post-title {
+            font-size: 1.4em;
+            color: #f0f0f0;
+            font-weight: bold;
+        }
+
+        .post-author {
+            font-style: italic;
+            color: #aaaaaa;
+            font-size: 0.9em;
+        }
+
+        .post-content {
+            margin-top: 15px;
+            color: #dddddd;
+            font-size: 1em;
+        }
+
+        .post-meta {
+            margin-top: 15px;
+            padding-top: 10px;
+            border-top: 1px solid #333333;
+            font-size: 0.8em;
+            color: #aaaaaa;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .reply-button {
+            background-color: #00d166;
+            color: #1a1a1a;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.2s;
+        }
+
+        .reply-button:hover {
+            background-color: #00e077;
+        }
+
+        @media (max-width: 600px) {
+            .post-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .post-author {
+                margin-top: 5px;
+            }
+
+            .post-meta {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header-content">
+        <p class="logo">VORTEX</p>
+
+        <div class="nav-links-container">
+            <a href="Home.html">HOME</a>
+            <a href="Library.html">LIBRARY</a>
+            <a href="community.html">COMMUNITY</a>
+        </div>
+
+        <a href="Signup.html "><button class="profile-btn">Sign In</button></a>
+    </div>
+
+    <div class="container">
+        <h1>Arcade Discussions & Community Hub</h1>
+
+        <div class="forum-post">
+            <div class="post-header">
+                <div class="post-title">Best Settings for 'Pixel Racer' on Mobile?</div>
+                <div class="post-author">Posted by RetroFan2024</div>
+            </div>
+            <div class="post-content">
+                <p>Just downloaded the new update for Pixel Racer and it feels a bit laggy. Anyone found the sweet spot
+                    for graphics settings that balance performance and looks? Especially interested in tips for battery
+                    life!</p>
+            </div>
+            <div class="post-meta">
+                <span>Category: Technical Support</span>
+                <span>Replies: 14</span>
+                <button class="reply-button">Reply</button>
+            </div>
+        </div>
+
+        <div class="forum-post">
+            <div class="post-header">
+                <div class="post-title">What are you playing this weekend?</div>
+                <div class="post-author">Posted by TheGamerGuru</div>
+            </div>
+            <div class="post-content">
+                <p>I'm diving deep into 'Starship Legacy'—that new expansion is incredible! What does everyone else have
+                    lined up for their gaming sessions this weekend?</p>
+            </div>
+            <div class="post-meta">
+                <span>Category: General Chat</span>
+                <span>Replies: 45</span>
+                <button class="reply-button">Reply</button>
+            </div>
+        </div>
+
+        <div class="forum-post">
+            <div class="post-header">
+                <div class="post-title">Seeking Teammates for 'Dungeon Brawl'!</div>
+                <div class="post-author">Posted by LFG_Tank</div>
+            </div>
+            <div class="post-content">
+                <p>Looking for two reliable players to run ranked Dungeon Brawl matches. Need a healer and another DPS.
+                    Must have a mic and be available most evenings!</p>
+            </div>
+            <div class="post-meta">
+                <span>Category: LFG (Looking for Group)</span>
+                <span>Replies: 7</span>
+                <button class="reply-button">Reply</button>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

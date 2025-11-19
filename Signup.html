@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VORTEX - Sign In</title>
+    <style>
+        /* General Body Styling */
+        body {
+            font-family: 'Sofia', sans-serif;
+            margin: 0;
+            padding-top: 60px;
+            background-color: #222;
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+        }
+        
+        /* Header Styling */
+        .header-content {
+            position: fixed;
+            top: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            background-color: black;
+            padding: 0 20px;
+            box-sizing: border-box;
+            z-index: 1000;
+        }
+
+        .nav-links-container {
+            display: flex;
+            justify-content: center;
+            flex-grow: 1;
+        }
+
+        .header-content a {
+            text-decoration: none;
+            color: white;
+            padding: 5px;
+            margin: 0 15px;
+            display: flex;
+            align-items: center;
+            font-weight: 500;
+            /* Simplified transition for color/size only */
+            transition: color 0.3s, font-size 0.3s;
+        }
+
+        .header-content a:hover {
+            color: orange;
+            font-size: large;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        .profile-btn{
+            background-color: gray;
+            color: #f0f0f0;
+            padding: 5px 15px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Sign-In Form Styling */
+        .signin-card {
+            background-color: #333;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+            width: 400px; /* Fixed width */
+            margin-top: -60px;
+        }
+        
+        .signin-card h1 {
+            color: #00d166;
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 2em;
+        }
+        
+        .signin-card label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #ccc;
+        }
+
+        .signin-card input[type="email"],
+        .signin-card input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #555;
+            border-radius: 6px;
+            background-color: #444;
+            color: #fff;
+            box-sizing: border-box;
+            font-size: 1em;
+            margin-bottom: 20px; 
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+
+        .signin-card input[type="email"]:focus,
+        .signin-card input[type="password"]:focus {
+            border-color: #00d166;
+            outline: none;
+            box-shadow: 0 0 5px rgba(0, 209, 102, 0.5);
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #00d166;
+            color: #121312;
+            border: none;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 1.1em;
+            transition: background-color 0.3s; 
+        }
+
+        .submit-btn:hover {
+            background-color: #48e29a;
+        }
+
+        /* Combined link styles */
+        .forgot-password, .signup-link {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+
+        .forgot-password a, .signup-link a {
+            color: #00d166;
+            text-decoration: none;
+
+        }
+
+
+        
+        /* Removed empty hover/active states */
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Header (Fixed) -->
+    <div class="header-content">
+        <p class="logo">VORTEX</p>
+
+        <div class="nav-links-container">
+            <a href="Home.html">HOME</a>
+            <a href="Library.html">LIBRARY</a>
+            <a href="community.html">COMMUNITY</a>
+        </div>
+
+        
+    </div>
+
+    <!-- Sign-In Form Container -->
+    <div class="signin-card">
+        <h1 style="font-size: 50px;">VORTEX VERSE</h1>
+        
+        
+        <form action="#" method="POST">
+            
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            
+            <button type="submit" class="submit-btn">
+                Sign In
+            </button>
+            
+        </form>
+
+        <div class="forgot-password">
+            <a href="#">Forgot Password?</a>
+        </div>
+        <div class="signup-link">
+            Don't have an account? <a href="#">Sign Up</a>
+        </div>
+    </div>
+    
+</body>
+</html>
